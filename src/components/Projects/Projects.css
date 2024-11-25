@@ -1,0 +1,79 @@
+/* Projects Section */
+.projects-container {
+  padding: 60px 40px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.projects-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid layout */
+  gap: 30px;
+  justify-items: center; /* Center the cards within the grid */
+}
+
+.project-card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow to give card depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* Slight upward movement on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow for a "lift" effect */
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.project-card a {
+  font-size: 1.1rem;
+  color: #ff7f50; /* Orange color for the link */
+  text-decoration: none;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #e05c2b; /* Darker orange on hover */
+  border-bottom: 2px solid #e05c2b; /* Underline effect on hover */
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+  .projects-container {
+    padding: 40px 20px; /* Adjust padding for mobile */
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* Stack project cards vertically on smaller screens */
+  }
+
+  .project-card {
+    width: 100%; /* Ensure card takes full width on mobile */
+  }
+
+  .project-card h3 {
+    font-size: 1.5rem; /* Smaller title on mobile */
+  }
+
+  .project-card p {
+    font-size: 1rem; /* Smaller paragraph text on mobile */
+  }
+}

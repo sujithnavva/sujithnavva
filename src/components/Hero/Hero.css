@@ -1,0 +1,211 @@
+/* General Hero Styles */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #121212; /* Dark background */
+  color: #fff;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin-right: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.hero-content h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+/* Flex Container for Buttons */
+.cta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-right: 20px;  /* Space between button and icon */
+  padding: 10px 30px;
+  background-color: #ff7f50; /* Orange color */
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #ff9f71;
+  transform: scale(1.05);  /* Slightly enlarge the button on hover */
+}
+
+/* Typing Effect */
+.typing-effect {
+  display: inline-block;
+  overflow: hidden; /* Ensures content is hidden while typing */
+  white-space: nowrap; /* Keeps the text on a single line */
+  width: 0; /* Start with no visible text */
+  animation: typing 4s steps(30) 1s forwards, blink-caret 0.75s step-end infinite;
+}
+
+/* Typing Animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Cursor Blinking Animation */
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #fff; /* Makes the caret blink */
+  }
+}
+
+/* Resume Icon Styling */
+.resume-icon-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.resume-icon {
+  width: 40px;  /* Adjust icon size */
+  height: 40px; /* Adjust icon size */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.resume-icon:hover {
+  transform: scale(1.1);  /* Slightly enlarge the icon on hover */
+}
+
+/* Flaticon Attribution Styling */
+.flaticon-attribution {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: center;
+}
+
+.flaticon-attribution a {
+  color: #ff7f50;
+  text-decoration: none;
+}
+
+.flaticon-attribution a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Image Styling */
+.hero-image {
+  flex: 1;
+  max-width: 45%;  /* Smaller image size */
+  text-align: center;
+  position: relative;
+}
+
+.hero-image img {
+  width: 55%;
+  height: auto;
+  border-radius: 12px; /* Rounded edges for a soft, minimal look */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  object-fit: cover; /* Ensure the image fills the container */
+  transition: transform 0.3s ease-in-out;
+}
+.profile-img:hover {
+  content: url('../../assets/profile-imag.jpg'); /* Change image on hover */
+}
+
+/* Artistic hover effect for image */
+.hero-image img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2); /* Bigger shadow on hover */
+}
+
+/* Gradient overlay effect */
+.hero-image img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255, 87, 34, 0.5), rgba(255, 87, 34, 0.8)); /* Orange gradient overlay */
+  border-radius: 70px; /* Rounded border radius matching the image */
+  pointer-events: none; /* Prevent overlay from interfering with interaction */
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+/* Show gradient on hover */
+.hero-image img:hover::before {
+  opacity: 1;
+}
+
+/* Ensure the layout is responsive */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem; /* Slightly smaller font for mobile */
+  }
+
+  .hero-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .cta-container {
+    margin-top: 20px;
+  }
+
+  .hero-image {
+    max-width: 70%;
+    margin-top: 20px;
+  }
+
+  .hero-image img {
+    width: 80%;  /* Ensure profile image size is smaller on mobile */
+  }
+}

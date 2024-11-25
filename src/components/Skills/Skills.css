@@ -1,0 +1,79 @@
+/* Skills Section */
+.skills-container {
+  padding: 60px 20px;
+  background-color: #121212; /* Dark background */
+  color: #fff;
+  text-align: center;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.skills-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.skills-category {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.skills-category:hover {
+  transform: translateY(-10px); /* Hover effect */
+}
+
+.category-title {
+  font-size: 1.5rem;
+  color: #ff7f50; /* Orange color */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap when needed */
+  gap: 15px;
+  justify-content: center; /* Center items horizontally */
+}
+
+.skills span {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.skills span:hover {
+  transform: scale(1.1);
+  background-color: #ff7f50; /* Orange color on hover */
+}
+
+@media (max-width: 768px) {
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+
+  .category-title {
+    font-size: 1.3rem;
+  }
+
+  .skills span {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}

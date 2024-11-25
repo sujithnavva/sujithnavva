@@ -1,0 +1,20 @@
+/* AboutMe Section */
+.aboutme-container {
+  padding: 60px 40px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.aboutme-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.aboutme-container p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,126 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121212; /* Dark background */
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 20px;
+  font-size: 1rem;
+  position: relative; /* Make sure Contact icon options are positioned relative to this */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ff7f50; /* Orange hover color */
+}
+
+/* Contact Menu Styling */
+.contact {
+  position: relative; /* To position the contact options absolutely */
+  cursor: pointer;
+}
+
+.contact-options {
+  display: none;
+  position: absolute;
+  top: 35px; /* Adjust this value to control the vertical distance */
+  left: 0;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 100;
+}
+
+.contact-options a {
+  display: inline-block;
+  margin: 0 20px; /* Increase the margin for better spacing between icons */
+  color: #ff7f50; /* Icon color */
+  transition: color 0.3s ease;
+  padding: 5px; /* Add padding to increase clickable area */
+}
+
+.contact-options a:hover {
+  color: #fff; /* Change icon color on hover */
+}
+
+/* Hover effect on the Contact button */
+.contact:hover .contact-options {
+  display: block;
+  opacity: 1;
+}
+
+/* Logo Styles */
+.logo h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo {
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    display: none; /* Hide the navbar links on mobile */
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .navbar .logo h1 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 25px;
+  }
+}

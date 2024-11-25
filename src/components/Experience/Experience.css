@@ -1,0 +1,140 @@
+/* Experience Section */
+.experience-container {
+    padding: 80px 20px;
+    background-color: #121212; /* Dark background */
+    color: #fff;
+    text-align: center;
+    font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+  }
+  
+  .experience-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  
+  .experience-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #1f1f1f; /* Dark background for content */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  .experience-item:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .dbs-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Logo hover effect */
+  .dbs-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .experience-content {
+    text-align: left;
+    max-width: 600px;
+  }
+  
+  .experience-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ff7f50; /* Accent color */
+  }
+  
+  .duration {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .experience-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .experience-list li {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #ddd;
+    opacity: 0;
+    transform: translateX(20px);
+    animation: fadeInLeft 0.5s ease-out forwards;
+  }
+  
+  .experience-list li:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  
+  .experience-list li:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .experience-list li:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+  
+  .certifications, .additional-info {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    color: #ddd;
+  }
+  
+  .certifications li {
+    margin-bottom: 10px;
+  }
+  
+  /* Animation for list items */
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Animation for the main container */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .experience-item {
+      padding: 20px;
+    }
+  
+    .experience-content h3 {
+      font-size: 1.5rem;
+    }
+  
+    .dbs-logo {
+      width: 60px;
+    }
+  }
+  
