@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="hero-container">
       <div className="hero-content">
         <h1 className="typing-effect">Sujith Kumar Navva</h1>
-        <h2>Full-Stack Developer | Cybersecurity Enthusiast</h2>
+        <h2>🔐 Cybersecurity Analyst | From Full-Stack Dev to Full-Spectrum Defense</h2>
         <p>Pursuing MSc in Cybersecurity at Nanyang Technological University</p>
 
         <div className="cta-container">

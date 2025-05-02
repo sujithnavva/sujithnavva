@@ -1,7 +1,7 @@
-// src/components/Experience.jsx
 import React from 'react';
 import './Experience.css';
-import dbsLogo from '../../assets/dbs-logo.png';  // DBS logo image
+import dbsLogo from '../../assets/dbs-logo.png';
+import Certifications from '../Certifications/Certifications';
 
 const Experience = () => {
   return (
@@ -17,18 +17,13 @@ const Experience = () => {
             <li>Collaborated with cross-functional teams to gather software requirements, ensuring compliance with security standards and business objectives, while using agile methodologies to ease prompt delivery.</li>
             <li>Conducted thorough testing and security assessments, leveraging Grafana and Kibana for performance monitoring and optimization, proactively addressing security-related issues.</li>
           </ul>
-          <h3>Certifications</h3>
-      <ul className="certifications">
-        <li>Application Security Titan Bronze Level – DBS Bank</li>
-        <li>Tech Certification: Front End Developer - React Language [DBS Bank]</li>
-      </ul>
-      <h3>Additional Information</h3>
-      <p className="additional-info">
-        Security Expertise: Proficient in secure coding practices, encryption, and compliance with security standards including GDPR and PCI DSS & Financial Sector Knowledge.
-      </p>
+          <p className="additional-info">
+            Security Expertise: Proficient in secure coding practices, encryption, and compliance with security standards including GDPR and PCI DSS & Financial Sector Knowledge.
+          </p>
         </div>
       </div>
       
+      <Certifications />
     </section>
   );
 };

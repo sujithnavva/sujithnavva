@@ -7,7 +7,9 @@ const AboutMe = () => {
     <section id="aboutme" className="aboutme-container">
       <h2>About Me</h2>
       <p>
-        I'm Sujith Kumar Navva, a Full-Stack Developer transitioning into Cybersecurity. Currently, I'm pursuing an MSc in Cybersecurity at Nanyang Technological University, with experience in building secure and scalable applications in the fintech sector.
+      I'm a cybersecurity-focused engineer with a full-stack development background, currently pursuing my MSc in Cybersecurity at Nanyang Technological University. I specialize in building secure, reliable, and scalable systems—combining experience in app development, cloud infrastructure, and incident response.
+
+At DBS Bank, I secured large-scale banking platforms and contributed to compliance-driven incident handling. I bring a defense-first, reliability-driven mindset to development—whether it’s fixing security flaws, automating infrastructure, or ensuring uptime at scale.
       </p>
     </section>
   );
