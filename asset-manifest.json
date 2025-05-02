@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/sujithnavva/static/css/main.d5c6251f.css",
-    "main.js": "/sujithnavva/static/js/main.1f649ef4.js",
+    "main.css": "/sujithnavva/static/css/main.fb238e67.css",
+    "main.js": "/sujithnavva/static/js/main.21fcbbeb.js",
     "static/media/profile-image.png": "/sujithnavva/static/media/profile-image.0edc97499183fa5ac022.png",
     "static/media/profile-imag.jpg": "/sujithnavva/static/media/profile-imag.24b08e71d6927b6e2645.jpg",
-    "static/media/resume.pdf": "/sujithnavva/static/media/resume.913e4b13f114747ee9bf.pdf",
+    "static/media/frontend-react.png": "/sujithnavva/static/media/frontend-react.f160436f96a56755e1f2.png",
+    "static/media/appsec-titan.png": "/sujithnavva/static/media/appsec-titan.d37690e1f5bc759200e4.png",
+    "static/media/resume.pdf": "/sujithnavva/static/media/resume.ac6fc316fd03fb33db99.pdf",
     "static/media/dbs-logo.png": "/sujithnavva/static/media/dbs-logo.93547cf7d2d89dfac789.png",
     "static/media/resume-icon.png": "/sujithnavva/static/media/resume-icon.2cf21801d6d246cc388b.png",
     "index.html": "/sujithnavva/index.html",
-    "main.d5c6251f.css.map": "/sujithnavva/static/css/main.d5c6251f.css.map",
-    "main.1f649ef4.js.map": "/sujithnavva/static/js/main.1f649ef4.js.map"
+    "main.fb238e67.css.map": "/sujithnavva/static/css/main.fb238e67.css.map",
+    "main.21fcbbeb.js.map": "/sujithnavva/static/js/main.21fcbbeb.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5c6251f.css",
-    "static/js/main.1f649ef4.js"
+    "static/css/main.fb238e67.css",
+    "static/js/main.21fcbbeb.js"
   ]
 }
