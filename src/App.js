@@ -1,9 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // <-- changed here
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-import Hero from './components/Hero/Hero'
+import Hero from './components/Hero/Hero';
 import AboutMe from './components/AboutMe/AboutMe';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
@@ -25,9 +25,6 @@ const Home = () => {
         <div id="experience">
           <Experience />
         </div>
-        {/* <div id="journey">
-          <Journey />
-        </div> */}
         <div id="projects">
           <Projects />
         </div>
@@ -48,7 +45,6 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/journey" element={<JourneyPage />} />
           <Route path="/blog" element={<BlogPage />} />
-
         </Routes>
       </div>
     </Router>
